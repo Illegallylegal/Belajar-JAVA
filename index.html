@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="program.js"></script>
+    <script>
+        function message( )
+        {
+        alert("Ini pesan yang muncul latihan ke c")
+        }
+        function myfunction(){
+            alert("Ini latihan D")
+        }
+        function myfunction2(txt)
+        {
+            alert(txt)
+        }
+        var d = new Date( )
+        var weekday= new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday")
+        var monthname= new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+        document.write(weekday[d.getDay( )] + " ")
+        document.write(d.getDate( ) + ". ")
+        document.write(monthname[d.getMonth( )] + " ")
+        document.write(d.getFullYear( )) 
+    </script>
+
+</head>
+<body onload="message()">
+    <script>
+        document.write("<h1>Ini Latihan a<h1>")
+    </script>
+    <form>
+        <input type="button" onclick="myfunction( )" value="Call function">
+    </form>
+        <p><h3>By pressing the button, a function will be called. The function
+        will alert a message.</p> </h3>
+        <form>
+            <input type="button"
+            onclick="myfunction2('SELAMAT MALAM!')"
+            value="Selamat Pagi">
+            <input type="button"
+            onclick="myfunction2('SELAMAT PAGI!')"
+            value="Selamat Malam">
+            </form>
+            <p>
+            ketika di tekan salah satu tombol maka
+            fungsi akan di panggil dan pesan akan di
+            tampilkan
+            </p> 
+            
+    
+</body>
+</html>
